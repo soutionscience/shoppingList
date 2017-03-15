@@ -1,3 +1,12 @@
-app.controller('AlreadyBoughtController', ['$scope', ShoppingListCheckOffService, function($scope, ShoppingListCheckOffService){
+
+app.controller('AlreadyBoughtController', AlreadyBoughtController);
+	AlreadyBoughtController.$inject = ['$scope' , 'ShoppingListCheckOffService'];
+
+	function AlreadyBoughtController( $scope, ShoppingListCheckOffService){
+
+	$scope.boughtItems =ShoppingListCheckOffService.boughtItems
+
+
 	
-}]);
+};
+

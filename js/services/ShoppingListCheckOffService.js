@@ -1,9 +1,10 @@
+
 app.service('ShoppingListCheckOffService' ,function(){
 
-    this.myFunc = function (data) {
+    // this.myFunc = function (data) {
 
-        return data;
-    }
+    //     return data;
+    // }
 
     this.data= [{
     	name: "cookies", 
@@ -22,5 +23,19 @@ app.service('ShoppingListCheckOffService' ,function(){
     	name: "Packets of chips",
     	quantity:3
     }
-    ]
+    ];
+
+    this.boughtItems=[];
+
+    this.removeItem= function(itemIndex){
+    	var item = this.data[itemIndex];
+    	this.boughtItems.push(item)
+    	this.data.splice(itemIndex, 1);
+  
+
+    	
+
+
+    }
+
 });
