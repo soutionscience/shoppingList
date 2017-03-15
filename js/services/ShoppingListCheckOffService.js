@@ -22,6 +22,10 @@ app.service('ShoppingListCheckOffService' ,function(){
      {
     	name: "Packets of chips",
     	quantity:3
+    },
+    {
+    	name: "samosas",
+    	quantity:4
     }
     ];
 
