@@ -1,10 +1,9 @@
 
-app.service('ShoppingListCheckOffService' ,function(){
+app.service('ShoppingListCheckOffService', ShoppingListCheckOffService);
 
-    // this.myFunc = function (data) {
 
-    //     return data;
-    // }
+function ShoppingListCheckOffService(){
+
 
     this.data= [{
     	name: "cookies", 
@@ -42,4 +41,4 @@ app.service('ShoppingListCheckOffService' ,function(){
 
     }
 
-});
+};
